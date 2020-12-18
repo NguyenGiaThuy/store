@@ -1,0 +1,62 @@
+@extends('layouts.manage')
+
+@section('content')
+    <div class="d-flex justify-content-end">
+        <a href="{{ route('editor.catalogs.create') }}" class="btn btn-success mb-2">Add New Catalog</a>
+    </div>
+
+    <div class="table-responsive container-fluid">
+        <table id="dtBasicExample" class="table table-striped table-bordered table-sm table-hover" cellspacing="0"
+               width="100%">
+            <thead>
+            <tr>
+                <th class="th-sm">Catalog ID
+                </th>
+                <th class="th-sm">Catalog Name
+                </th>
+                <th class="th-sm">Action
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($catalogList as $catalog)
+                <tr>
+                    <td class="text-capitalize">{{ $catalog->id }}</td>
+                    <td class="text-capitalize">{{ $catalog->catalog_name }}</td>
+                    <td>
+                        <a href="{{ route('editor.catalogs.show', $catalog->id) }}"
+                           class="btn btn-blue btn-sm">Edit</a>
+                    </td>
+                </tr>
+            @endforeach
+            </tbody>
+            <tfoot>
+            <tr>
+                <th class="th-sm">Catalog ID
+                </th>
+                <th class="th-sm">Catalog Name
+                </th>
+                <th class="th-sm">Action
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ asset('dbtables/js/jquery.min.js') }}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{{ asset('dbtables/js/popper.min.js') }}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{{ asset('dbtables/js/mdb.min.js') }}"></script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="{{ asset('dbtables/js/addons/datatables.min.js') }}"></script>
+    <!-- Your custom scripts (optional) -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dtBasicExample').DataTable();
+            $('.dataTables_length').addClass('bs-select');
+        });
+    </script>
+@endsection
