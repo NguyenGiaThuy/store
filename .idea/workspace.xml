@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b048db30-6f24-4a85-b8e3-effe5e510858" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Editor/CatalogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Editor/CatalogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Editor/EditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Editor/EditorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Editor/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Editor/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Editor/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Editor/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/manage/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/manage/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +157,7 @@
       <workItem from="1608264669281" duration="2184000" />
       <workItem from="1608277442840" duration="3997000" />
       <workItem from="1608552729157" duration="1226000" />
-      <workItem from="1608554338120" duration="6999000" />
+      <workItem from="1608554338120" duration="8560000" />
     </task>
     <servers />
   </component>
