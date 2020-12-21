@@ -57,7 +57,7 @@ class UserController extends Controller
             'address' => 'nullable|max:255|string',
             'email' => 'required|email|max:255|unique:profiles',
             'phone_number' => 'nullable|string|max:255|unique:profiles',
-            'avatar' => 'nullable|string|max:255',
+            'avatar' => 'nullable|string',
             'role_id' => 'required|integer|between:1,3',
         ]);
 
@@ -154,7 +154,7 @@ class UserController extends Controller
             'address' => 'nullable|max:255|string',
             'email' => 'required|email|max:255|unique:profiles,email,' . $profile->id,
             'phone_number' => 'nullable|string|max:255|unique:profiles,phone_number,' . $profile->id,
-            'avatar' => 'nullable|string|max:255',
+            'avatar' => 'nullable|string',
             'role_id' => 'required|integer|between:1,3',
         ]);
 

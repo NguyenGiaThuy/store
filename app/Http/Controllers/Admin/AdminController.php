@@ -43,7 +43,7 @@ class AdminController extends Controller
             'address' => 'nullable|max:255|string',
             'email' => 'required|email|max:255|unique:profiles,email,' . $profile->id,
             'phone_number' => 'nullable|string|max:255|unique:profiles,phone_number,' . $profile->id,
-            'avatar' => 'nullable|string|max:255',
+            'avatar' => 'nullable|string',
         ]);
 
         $profileInput = $request->only('real_name', 'address', 'email', 'phone_number', 'avatar');

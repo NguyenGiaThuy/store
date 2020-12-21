@@ -53,7 +53,7 @@ class ProductController extends Controller
             'brand' => 'nullable|string|max:255',
             'price' => 'required|integer|gt:0',
             'type' => 'nullable|string|max:255',
-            'image' => 'nullable|string|max:255',
+            'image' => 'nullable|string',
             'catalog_id' => 'nullable|integer|gte:1',
         ]);
 
@@ -125,7 +125,7 @@ class ProductController extends Controller
             'brand' => 'nullable|string|max:255',
             'price' => 'required|integer|gte:0',
             'type' => 'nullable|string|max:255',
-            'image' => 'nullable|string|max:255',
+            'image' => 'nullable|string',
             'catalog_id' => 'nullable|integer|gte:1',
         ]);
 
