@@ -130,7 +130,7 @@ class ProductController extends Controller
             'catalog_id' => 'nullable|integer|gte:1',
         ]);
 
-        if(Catalog::find(catalog_id) == null) {
+        if(Catalog::find($request->get('catalog_id')) == null) {
             return redirect()->back()->with('error', 'Cannot update product!');
         }
 
